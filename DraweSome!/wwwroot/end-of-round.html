@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DraweSome! - End of Round</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="game.js" defer></script>
+    <script type="text/javascript" src="players.js" defer></script>
+    <script src="showWord.js" defer></script>
+    <script type="text/javascript" src="start-of-round.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <div class="drawing-page-container">
+        <img class="logo" id="draw-logo" src="./images/drawesome-logo.png">
+      <canvas id="guessedWordPanel" width="615" height="385" style="background-color: #FFFFFF"></canvas>
+
+        <p>Guesser: <var id="guessing-player"></var></p>
+
+    <div class="button-container">
+        <a href="#" class="rainbow-button" id="next-round" alt="next-round"></a>
+        <a href="#" class="rainbow-button" id="finish-game" alt="finish-game"></a>
+    </div>
+    </div>
+</main>
+</body>
+</html>

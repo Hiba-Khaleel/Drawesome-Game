@@ -1,0 +1,415 @@
+/* 
+    MAIN STYLING:  Allt som berör alla / flera sidor
+*/
+html {
+    overflow-x: hidden;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/rainbow-background.png");
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    max-width: 100vw;
+}
+ul{
+    list-style-type: none;
+}
+
+a {
+    text-decoration:none;
+    color:#FFF;
+}
+.rainbow-button {
+    width:calc(10vw + 6px);
+    height:calc(4vw + 6px);
+    max-width: 180px;
+    max-height: 70px;
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.3vw;
+    font-weight:bold;
+    position:relative;
+    overflow:hidden;
+    padding:3px;
+}
+.rainbow-button:after {
+    content:attr(alt);
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background-color:#191919;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:inherit;
+}
+.rainbow-button:hover {
+    animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+        background-position:20vw;
+    }
+}
+
+.logo {
+    width:850px;
+    height:200px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/*
+    WELCOME-PAGE STYLING: 
+ */
+
+#logo-welcome {
+    margin-top: 15rem;
+    width: 100rem;
+    height: 30rem;
+}
+#start-new-game {
+    cursor: pointer;
+    font-size: 3vw;  
+    width: calc(18vw + 10px); 
+    height: calc(6vw + 10px); 
+    max-width: 90rem;  
+    max-height: 25rem; 
+    text-align: center; 
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.welcome-container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+    PLAYERS-PAGE STYLING: 
+*/
+.players-page-container{
+    width: 100%;
+    /*margin: 0 auto;*/
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#logo-players {
+    width: 80rem;
+    height: 20rem;
+}
+
+
+.players-form {
+    font-size: 2rem;
+    margin: 20px auto;
+    padding: 15px;
+    gap: 3rem; 
+    border-radius: 8px;
+    color: white;
+}
+
+
+.players-form label {
+    background-image: linear-gradient(10deg, #00C0FF, #FFCF00, #FC4F4F);
+    color: black;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.players-form input[type="text"] {
+    background-color: black;
+    color: white;
+    border: 1px solid #ccc;
+    padding: .7rem 1rem;
+    font-size: 2rem;
+    border-radius: 15px;
+    margin: .7rem;
+}
+
+.players-form input[type="text"]::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+.players-form #submit-players ,#start-of-round{
+    margin:1.5rem auto;
+}
+
+#spelreglar{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+.info {
+    color: white;
+    padding: .3rem 1rem;
+    background-color: black;
+    font-size: 1.6rem;
+    border-left: 10px solid #FC4F4F;
+    border-radius: 15px;
+}
+.info span{
+    color: #FC4F4F;
+    font-weight: bold;
+}
+.players-form div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/*
+    DRAW-PAGE STYLING: #ID:n som berör denna sida
+*/
+
+
+
+.drawing-page-container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.drawing-page-container #draw-logo{
+    width: 70rem;
+    height: 20rem;
+}
+.drawing-container{
+    margin: 0 auto;
+    /*margin: 3rem;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.top-container {
+    width: 100%;
+    height: 64px;
+    color: white;
+    background: #191919;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-container ul {
+    width: 100%;
+    /*padding: 1rem;*/
+    margin: 0;
+    padding: .2rem 1rem .2rem 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-container ul li{
+    font-size: 1.5rem;
+    /*width: 18%;*/
+    display: flex;
+    justify-content: center;
+}
+.middle-container{
+    margin: 1.5rem 0 1.5rem 0;
+}
+ canvas{
+    border: 10px solid black;
+    border-radius: 15px;
+}
+#drawingPanel {
+    cursor: url("./images/pencil-cursor32.svg") 0 30, auto;
+}
+
+
+
+
+
+
+
+
+
+/*
+    GUESS-PAGE STYLING: #ID:n som berör denna sida
+*/
+
+#guessing-form{
+    display: flex;
+    gap: 2rem;
+}
+#guessing-form input[type="text"]{
+    background-color: #191919;
+    font-size: 2rem;
+    color: white;
+    padding: .5rem .8rem;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+#guessing-form input::placeholder{
+    /*font-size: 1.3rem;*/
+}
+.guessing-container{
+    display: flex;
+    gap:3rem;
+}
+.leader-crown{
+    margin: 0;
+}
+.word-list{
+    margin:0 auto;
+    color: #FFFFFF;
+    font-size: 2rem;
+
+}
+.word-list h3{
+    margin-top: -.5rem;
+    
+}
+#wrong-guesses{
+    margin: -1rem -3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+#wrong-guesses li p{
+    background-color: #191919;
+    padding: .6rem .9rem;
+    border-radius: 10px;
+    width: 100%;
+    width: fit-content;
+    margin: 0 ;
+}
+/*#wrong-guesses li p{*/
+/*    */
+/*}*/
+
+
+/*
+    END-OF-ROUND-PAGE STYLING: #ID:n som berör denna sida
+*/
+
+#next-round, #finish-game{
+    font-size: 1.5vw;
+    width: calc(10vw + 10px);
+    height: calc(3vw + 10px);
+    max-width: 90rem;
+    max-height: 25rem;
+    text-align: center;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+/*
+    END-OF-GAME-PAGE STYLING: #ID:n som berör denna sida
+*/
+.end-game-container{
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-scores-list{
+    margin: 2rem auto;
+}
+.player-scores-list li{
+    display: flex;
+    gap: 1rem;
+}
+.player-scores-list li h3{
+    background-image: linear-gradient(10deg, #00C0FF, #FFCF00, #FC4F4F);
+    color: black;
+    padding: .5rem;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.player-scores-list li p.player-score{
+    background-image: linear-gradient(10deg, #00C0FF, #FFCF00, #FC4F4F);
+    color: black;
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.end-game-container{
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ .button-container{
+    margin: 1rem auto;
+    display: flex;
+    gap: 3rem;
+}
+ .button-container *{
+    border:1px solid white;
+    font-size: 2vw;
+    width: calc(20vw + 10px);
+    height: calc(6vw + 10px);
+}
+
+
+
+
+
+
+
+
+
+
+

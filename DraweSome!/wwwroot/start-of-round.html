@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="players.js" defer></script>
+    <script type="text/javascript" src="game.js" defer></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Drawesome! - Start of round</title>
+</head>
+<body>
+<main>
+    <div class="players-page-container">
+        <img src="images\drawesome-logo.png" class="logo" id="logo-players" alt="Logo players">
+        <form class="players-form" id="start-of-round-form">
+
+            <div>
+                <label id="drawing-player">Player 1:</label>
+                <p>Get ready to draw & </p>
+                <input type="text" id="draw-word" name="player1" placeholder="draw word" required>
+
+            </div>
+            <div>
+                <label id="guessing-player">Player 2:</label>
+                <p>Close your eyes</p>
+            </div>
+
+            <div class="info">
+                <p><span>Spelregler!</span> Tid att rita: <span>30</span> sekunder / Antal streck: <span>3</span> linjer</p>
+            </div>
+            <a href="#" class="rainbow-button" id="start-of-round" alt="Start Game"></a>
+        </form>
+    </div>
+</main>
+</body>
+</html>
+

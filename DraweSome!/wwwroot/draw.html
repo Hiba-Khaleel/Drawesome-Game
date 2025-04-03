@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="players.js" defer></script>
+    <script type="text/javascript" src="game.js" defer></script>
+    <script src="points-logic.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Drawesome! - Draw</title>
+</head>
+<body>
+<main>
+    <div class="drawing-page-container">
+        <img class="logo" id="draw-logo" src="./images/drawesome-logo2.png">
+        <div class="drawing-container">
+            <div class="top-container">
+                <ul>
+                    <li><p>Artist: <var id="drawing-player">Nour</var></p></li>
+                    <li><p>Time Remaining: <var id="drawing-timer"></var></li>
+                </ul>
+            </div>
+            <div class="middle-container"><canvas id="drawingPanel" width="800" height="450" style="background-color: #FFFFFF"></canvas>
+            </div>
+            <div class="bottom-container">
+                <a href="guess.html" class="rainbow-button" id = "submitDrawing" alt="Submit"></a>
+            </div>
+
+        </div>
+        
+    </div>
+</main>
+<script src="./drawpanel.js" defer></script>
+</body>
+</html>

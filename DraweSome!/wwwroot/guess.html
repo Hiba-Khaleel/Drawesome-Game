@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="players.js" defer></script>
+    <script type="text/javascript" src="game.js" defer></script>
+    <script type="text/javascript" src="guess.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Drawesome! - Guess</title>
+</head>
+<body>
+<main>
+    <div class="drawing-page-container">
+        <img class="logo" id="draw-logo" src="./images/drawesome-logo2.png">
+        <div class="guessing-container">
+            <aside class="aside-container">
+                <div class="leader-board-container">
+                    <img class="leader-crown" src="./images/crown.png" width="70" height="70">
+                    <ul class="player-scores-list" id="leader-board"> 
+                    </ul>
+                </div>
+                <div class="word-list">
+                    <h3>Latest Guesses</h3>
+                    <ul id="wrong-guesses">
+                    </ul> 
+                </div>
+            </aside>
+            <div class="drawing-container">
+                <div class="top-container">
+                    <ul>
+                        <li><p>Guesser: <var id="guessing-player">Hiba</var></p></li>
+                        <li><p>Points: <var id="points-counter">100</var></li>
+                    </ul>
+                </div>
+                <div class="middle-container" id="retrieved-drawing"> <canvas id="guessedWordPanel" width="715" height="485" style="background-color: #FFFFFF"></canvas>
+                 
+                </div>
+                <div class="bottom-container">
+                    <form id="guessing-form">
+                        <label for="player-guess"></label>
+                        <input type="text" id="player-guess" name="player-guess" placeholder="Write your guess here..." required>
+                        <a href="#" class="rainbow-button" id="submit-guess" alt="Submit" type="submit"></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
